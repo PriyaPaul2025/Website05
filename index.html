@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Online Course Platform</title>
+    </head>
+<body>
+    <header>
+        <a href="#" class="logo"> LET'S <span> CODE</span></a>
+<ul class="navbar">
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">About Us</a></li>
+            <li> <a href="#">Cources</a></li>
+            <li> <a href="#">Certificate</a></li>
+            <li> <a href="#">Quiz</a></li>
+            <li> <a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+    <section  id="home" class="hero">
+        <div class="home-text">
+            <h1>We only teach what we are really good at.</h1>
+            <p>Get ready to accelarate your career with customized cources and leave your mark in the tech industry</p>
+            <div class="btn-container">
+            <a href="#" class="btn"> Start Free</a>
+            <a href="#" class="btn"> What is Decodable?</a>
+</div>
+        </div>
+    </section>
+
+
+    <section class="section__container about__container" id="about">
+        <div class="about__header">
+            <h2 class="section__header">ABOUT US & OUR TRAINERS</h2>
+            <p class="section__description">
+                Our mission is to inspire and support individuals in achieving their health and wellness goals, regardless of their fitness level or background.
+            </p>
+        </div> 
+    <div class="trainer__grid">
+        <!-- Trainer Cards -->
+        <div class="trainer__card">
+            <img src="t1.jpg" alt="trainer" />
+            <h4>DAVID WILLIAMS</h4>
+            <p>Body Builder Coach</p>
+        </div>
+        <div class="trainer__card">
+            <img src="t2.jpg" alt="trainer" />
+            <h4>ROSY RIVERA</h4>
+            <p>Cardio Coach</p>
+        </div>
+        <div class="trainer__card">
+            <img src="t3.jpg" alt="trainer" />
+            <h4>MATT STONIE</h4>
+            <p>Fitness Coach</p>
+        </div>
+        <div class="trainer__card">
+            <img src="t4.jpg" alt="trainer" />
+            <h4>SOFIA LAUREN</h4>
+            <p>Crossfit Coach</p>
+        </div>
+    </div>
+</section>  
+
+
+    <section id="trending">
+        <h2>Online Cources</h2>
+        <div class="trending-grid">
+            <div class="trending-card">
+                <img src="3.jpg" alt="Front-End Domination: Create Anything With Code">
+                <h3>Font-End Domination: Create Anything With Code</h3>
+                <p>Dominate the web with front-end skills. Nail HTML, CSS, JavaScript, and solve real problems, dive into fun projects, and be interview ready.</p>
+                <a href="#show-details" class="cta-btn">BUY NOW</a>
+            </div>
+            <div class="trending-card">
+                <img src="2.jpg" alt="Back-End Domination: Create Efficient Back-End">
+                <h3>Back-End Domination: Create Efficient Back-End</h3>
+                <p>Ready to rule the digital world? Learn about powerful back-ends that drive websites and apps smoothly. From databases to security, we cover it all.</p>
+                <a href="#show-details" class="cta-btn">BUY NOW</a>
+            </div>
+            <div class="trending-card">
+                <img src="1.jpg" alt="Aptitude & Reasoning for Campus Placements">
+                <h3>Aptitude & Reasoning for Campus Placements</h3>
+                <p>Ace your campus placements. Master aptitude and reasoning with our expert-led courses, packed with interactive lessons and practice tests.</p>
+                <a href="#show-details" class="cta-btn">BUY NOW</a>
+            </div>
+            <div class="trending-card">
+                <img src="4.jpg" alt="Java & DSA Domination">
+                <h3>Java & DSA Domination</h3>
+                <p>Ace your coding interviews. Master Java & DSA with our expert-led courses, packed with interactive lessons and practice tests.</p>
+                <a href="#show-details" class="cta-btn">BUY NOW</a>
+            </div>
+            <div class="trending-card">
+                <img src="5.jpg" alt="Three.js Domination">
+                <h3>Three.js Domination</h3>
+                <p>Create web experiences that people won't believe. Learn 3D design and animation with Three.js.</p>
+                <a href="#show-details" class="cta-btn">BUY NOW</a>
+            </div>
+        </div>        
+        </div>
+    </section>
+
+
+<section id="certificate">
+    <div class="certificate-container">
+        <h2 class="section-header">Get Your Certificate</h2>
+        <p class="section-description">Complete the course and apply for your certificate below. Once you’ve finished all lessons and quizzes, click the "Apply for Certificate" button.</p>
+        <form id="certificate-form">
+            <label for="student-name">Enter Your Name:</label>
+            <input type="text" id="student-name" name="student-name" placeholder="Full Name" required>
+
+            <label for="course-completion">Course Completed?</label>
+            <select id="course-completion" name="course-completion" required>
+                <option value="">Select Course Status</option>
+                <option value="completed">Completed</option>
+                <option value="not-completed">Not Completed</option>
+            </select>
+            <button type="submit" id="apply-certificate">Apply for Certificate</button>
+        </form>
+    </div>
+</section>
+
+<section class="quiz">
+    <div class="quiz-container">
+        <h1 class="quiz-title">Coding Knowledge Quiz</h1>
+        <div id="quiz">
+          <div class="question-container">
+            <p id="question">Question will appear here</p>
+            <ul id="options">
+            </ul>
+          </div>
+          <button id="next-btn" class="btn" onclick="nextQuestion()">Next Question</button>
+          <p id="score-display">Score: 0</p>
+        </div>
+      </div>
+</section>
+
+<section id="contact" class="section contact-section">
+    <div class="container1">
+    <h2 class="sec-title">Contact Us</h2>
+    <p class="sec-des">If you have any questions or need support, feel free to reach out to us. We're here to help</p>
+    <form action="#" method="post" id="contact-form">
+        <div class="input-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+        <label for="message">Message:</label>
+        <input type="message" id="message" name="name" rows="4" required>
+        </div>
+        <button type="submit" class="cta-btnn"> Send Message</button>
+    </form>
+    <h3 class="contact-alternative-title">Other Ways To Contact Us</h3>
+    <p>Email:support@aitoolhub.com</p>
+    <p class="pp">Phone: +1 123-456-7890</p>
+  </section>
+
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="#" class="logo">LET'S <span>CODE</span></a>
+            <p>Accelerating careers with cutting-edge tech courses</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:support@aitoolhub.com">support@aitoolhub.com</a></p>
+            <p>Phone: +1 123-456-7890</p>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="social-icon twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social-icon instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="social-icon linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 LET'S CODE. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
